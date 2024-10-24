@@ -1,89 +1,257 @@
 body {
-    background-color: #eeeeee;
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #eeeeee;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .h1 {
-    -webkit-text-stroke: 3px white;
-    color: transparent;
-    transition: 0.5s;
-    text-shadow:
-        5px 5px 5px aqua,
-        7px 7px 0px #e601c0,
-        9px 9px 0px #e9019a,
-        11px 11px 0px #f40448
+  font-size: 56px;
+  -webkit-text-stroke: 3px white;
+  color: transparent;
+  transition: 0.5s;
+  text-shadow: 5px 5px 5px aqua, 7px 7px 0px #e601c0, 9px 9px 0px #e9019a,
+    11px 11px 0px #f40448;
 }
 
-.h1:hover{
-    text-shadow: none;
+.h1:hover {
+  text-shadow: none;
 }
 /* estilos del header */
 .menu-container {
-    font-size: 24px;
-    border: 1px solid black;
-    text-align: left;
-    background-size: cover;
-    display: flex;
-    flex-flow: column wrap;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+  font-size: 24px;
+  border: 1px solid black;
+  text-align: left;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 20px;
+  background-color: #333;
+  color: white;
 }
 
 .menu {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding: 10px;
+  margin-top: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* estilos para la galería de imágenes */
 .gallery-container {
-    padding: 20px;
+  padding: 20px;
 }
 
 .gallery {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
 }
 
 .gallery-item {
-    padding: 70px;
-    text-align: center;
-    border: 1px solid #333;
-    width: 100%;
-    max-width: 120px;
-    height: 100px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 50);
+  border: 1px solid #333;
+  width: 20%;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.gallery-item img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.5);
 }
 
 /* estilos del footer */
 .footer-container {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  margin: 0px 0px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .h1 {
+    font-size: 42px;
+    -webkit-text-stroke: 2.2px white;
+    color: transparent;
+    transition: 0.5s;
+    text-shadow: 5px 5px 5px aqua, 7px 7px 0px #e601c0, 9px 9px 0px #e9019a,
+      11px 11px 0px #f40448;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  .menu {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+  }
+  .footer-container {
     text-align: center;
+    font-size: 13px;
     padding: 20px;
+    margin-bottom: 0;
     background-color: #333;
     color: white;
+    text-decoration: none;
+    margin: 0px 0px;
+  }
 }
-
-.footer-container {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .h1 {
+    font-size: 44px;
+    -webkit-text-stroke: 2.4px white;
+    color: transparent;
+    transition: 0.5s;
+    text-shadow: 5px 5px 5px aqua, 7px 7px 0px #e601c0, 9px 9px 0px #e9019a,
+      11px 11px 0px #f40448;  
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .menu {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+  .footer-container {
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    margin-bottom: 0;
+    background-color: #333;
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0px 0px;
+  }
 }
 
-/* Media Queries para móviles */
-@media (max-width: 767px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .h1 {
+    font-size: 47px;
+    -webkit-text-stroke: 2.6px white;
+    color: transparent;
+    transition: 0.5s;
+    text-shadow: 5px 5px 5px aqua, 7px 7px 0px #e601c0, 9px 9px 0px #e9019a,
+      11px 11px 0px #f40448;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .menu {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 21px;
+  }
+  .footer-container {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    margin-bottom: 0;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    margin: 0px 0px;
+  }
+}
 
-/* Media Queries para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .h1 {
+    font-size: 51px;
+    -webkit-text-stroke: 2.8px white;
+    color: transparent;
+    transition: 0.5s;
+    text-shadow: 5px 5px 5px aqua, 7px 7px 0px #e601c0, 9px 9px 0px #e9019a,
+      11px 11px 0px #f40448;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .menu {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+  }
+  .footer-container {
+    text-align: center;
+    font-size: 17px;
+    padding: 20px;
+    margin-bottom: 0;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    margin: 0px 0px;
+  }
+  
+}
 
-/* Media Queries para pantallas grandes */
-@media (min-width: 1024px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .h1 {
+    font-size: 55px;
+    -webkit-text-stroke: 3px white;
+    color: transparent;
+    transition: 0.5s;
+    text-shadow: 5px 5px 5px aqua, 7px 7px 0px #e601c0, 9px 9px 0px #e9019a,
+      11px 11px 0px #f40448;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .menu {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+  }
+  .footer-container {
+    text-align: center;
+    font-size: 19px;
+    padding: 20px;
+    margin-bottom: 0;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    margin: 0px 0px;
+  }
+}
