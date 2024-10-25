@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll('.gallery-item img');  // Seleccionamos todas las imágenes dentro de gallery-item
+document.addEventListener("DOMContentLoaded", function alerta() {
+    const Images = document.querySelectorAll('.gallery-item img');  // seleccionamos todas las imágenes dentro de gallery-item
 
-    images.forEach(function (img) {
+    Images.forEach(function (img) {
         img.addEventListener('click', function () {
-            const weaponName = this.getAttribute('data-name');  // Obtenemos el valor del atributo data-name
-            alert('Nombre: ' + weaponName);
+            const Weapon_Name = this.getAttribute('data-name');  // obtenemos el valor del atributo data-name
+            alert('Nombre: ' + Weapon_Name);
         });
     });
 }); 
