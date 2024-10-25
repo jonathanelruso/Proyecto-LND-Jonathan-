@@ -33,5 +33,6 @@ Inspiration, code snippets, etc.
 * [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * [FontAwesome](https://fontawesome.com/)
 * [JavaScript-Video](https://youtu.be/Kl6LKf85evg?si=BHC6BF_PYAD0LwZS)
+* [This book](https://www.amazon.es/Curso-desarrollo-Web-JavaScript-Edici%C3%B3n/dp/844154414X)
 * My teacher Tiburcio Cruz
   
