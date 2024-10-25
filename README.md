@@ -27,4 +27,7 @@ Jonathan Morera Apaza
 Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
 * [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [FontAwesome](https://fontawesome.com/)
+* [JavaScript-Video](https://youtu.be/Kl6LKf85evg?si=BHC6BF_PYAD0LwZS)
+* My teacher Tiburcio Cruz
   
