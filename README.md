@@ -14,6 +14,8 @@ The project was developed on Windows 11 and ChromeOS operating systems.
 
 Additionally, the project was developed with Visual Studio Code IDE.
 
+Finally, my website is based on this example: (https://dribbble.com/shots/24206270-Chanta-Backpack-Store-Category)
+
 ## Authors
 
 Jonathan Morera Apaza
