@@ -1,0 +1,119 @@
+/* Form styles */
+#personal-data-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Labels for the fields */
+#personal-data-form label {
+    font-weight: normal;
+    color: #111;
+    margin-bottom: 0.3em;
+    margin-top: 1em;
+}
+
+/* Input fields for text and email */
+#personal-data-form input[type="text"],
+#personal-data-form input[type="email"] {
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #111;
+}
+
+#personal-data-form input[type="text"]:focus,
+#personal-data-form input[type="email"]:focus {
+    background-color: #fff;
+    border: 1px solid #a0a0a0;
+    outline: none;
+}
+
+/* Validation messages */
+#personal-data-form span {
+    color: #d9534f;
+    font-size: 0.85em;
+    margin-top: 0.3em;
+}
+
+/* Submit button */
+.form-submit {
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.form-submit button {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    padding: 0.8em;
+    border-radius: 5px;
+    background-color: #febd69;
+    color: #111;
+    border: 1px solid #c8975d;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-submit button:hover {
+    background-color: #f3a847;
+}
+
+/* Footer styles */
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .item {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-container {
+        font-size: 10px;
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .item {
+        width: 90%;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .item {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .item {
+        width: 70%;
+    }
+}
+
+/* Large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .item {
+        width: 60%;
+    }
+}

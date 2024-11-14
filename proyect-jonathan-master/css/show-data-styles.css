@@ -1,0 +1,96 @@
+.menu-container {
+    font-size: 24px;
+    border: 1px solid black;
+    text-align: left;
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 8em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2em;
+}
+
+.data-container {
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 2em 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.data-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    padding: 0.5em 0;
+}
+
+.data-label {
+    font-weight: bold;
+    width: 30%;
+}
+
+.data-value {
+    width: 65%;
+    padding: 0.5em;
+    background-color: var(--input-color);
+    border-radius: 3px;
+    border-bottom: 1px solid black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    .data-container {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        padding-top: 5em;
+    }
+
+    .data-container {
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        padding-top: 3em;
+        justify-content: center;
+    }
+
+    .data-container {
+        width: 50%;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Canary Airsoft</title>
+
+    <!-- Fuentes y Estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form-styles.css">
+    
+    <!-- FontAwesome para íconos -->
+    <script src="https://kit.fontawesome.com/f8e3d11e14.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+    <header class="menu-container" style="background-image: url(img/black-gray-satin-dark-fabric-260nw-2339895123.jpg);">
+        <div class="h1">Canary Airsoft <i class="fa-solid fa-gun" style="color: #ea48cc;"></i> </div>
+        <div class="menu">
+            <div class="menu-box"><a href="index.html">Inicio</a></div>
+            <div class="menu-box"><a href="#">Categorías</a></div>
+            <div class="menu-box"><a href="#">Novedades</a></div>
+            <div class="menu-box"><a href="#">Carrito</a></div>
+            <div class="menu-box"><a href="#">Pedidos</a></div>
+            <div class="menu-box"><a href="#">Mi cuenta</a></div>
+        </div>
+    </header>
+
+    <!-- Contenedor del formulario -->
+    <div class="form-container">
+        <h2>Formulario de Registro</h2>
+        <div class="form-item">
+            <form action="show-data.html" id="personal-data-form">  
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name" required>
+                <span id="form-name">* campo requerido</span>
+
+                <label for="surname">Apellidos:</label>
+                <input type="text" name="surname" id="surname" required>
+                <span id="form-surname">* campo requerido</span>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" id="email" required>
+                <span id="form-email">* campo requerido</span>
+
+                <div class="form-submit">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer-container">
+        <p>© 2024 Canary Airsoft - Todos los derechos reservados.</p>
+        <div>
+            <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a> | <a href="#">Contacto</a>
+        </div>
+    </footer>
+
+    <script src="js/validate.js"></script>
+</body>
+
+</html>
